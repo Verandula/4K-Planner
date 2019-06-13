@@ -6,10 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.util.Locale;
 
-public class AcademicCalendar extends Application {
+public class MainCalendar extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -18,11 +19,13 @@ public class AcademicCalendar extends Application {
 
         // Set main window icon
         stage.getIcons().add(
-                new Image("calendar/ui/icons/app_icon_2.png"));
-        stage.setTitle("JavaFX Planner");
+                new Image("calendar/ui/icons/app_icon.png"));
+        stage.setTitle("4K-Planner");
 
         // Maximize window at launch
         stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setFullScreen(false);
 
         Scene scene = new Scene(root);
         stage.setScene(scene);

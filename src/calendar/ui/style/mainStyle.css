@@ -24,9 +24,9 @@
 .weekday-header {
     -fx-font: bold 17px "System";
     -fx-font-style: normal;
-    -fx-background-color:  #9a529b;
+    -fx-background-color:  #544f87;
     -fx-border-style: solid;
-    -fx-border-insets: 1;
+    -fx-border-insets: 10;
     -fx-border-width: .2;
     -fx-border-color: white;
 }
@@ -89,7 +89,7 @@
 
 /* Tab pane styling */
 -jfx-tab-pane {
-    -fx-background-color: #555;
+    -fx-background-color: #2b0549;
 }
 .jfx-tab-pane .tab
 {

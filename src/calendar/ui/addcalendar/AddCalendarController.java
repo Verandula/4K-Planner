@@ -105,7 +105,7 @@ public class AddCalendarController implements Initializable {
                     mainController.calendarGenerate();
 
                     //Enable the checkboxes for filtering events, now that the user is actually working on a calendar
-                    mainController.enableCheckBoxes();
+//                    mainController.enableCheckBoxes();
 
                     //Enable the buttons that work with rules
                     //mainController.enableButtons();

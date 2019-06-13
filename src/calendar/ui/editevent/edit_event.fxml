@@ -55,13 +55,13 @@
             <JFXComboBox fx:id="categorieSelect" focusColor="#4d4d4d" layoutX="10.0" layoutY="102.0" prefHeight="25.0" prefWidth="166.0" promptText="Categorie" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <JFXTimePicker fx:id="startTime" defaultColor="#9a529b" prefHeight="200.0" prefWidth="200.0" promptText="Start Time" />
-                  <JFXDatePicker fx:id="startDate" defaultColor="#9a529b" promptText="Start Date" />
+                  <JFXTimePicker fx:id="startTime" defaultColor="#544f87" prefHeight="200.0" prefWidth="200.0" promptText="Start Time" />
+                  <JFXDatePicker fx:id="startDate" defaultColor="#544f87" promptText="Start Date" />
                </children></HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <JFXTimePicker fx:id="endTime" defaultColor="#9a529b" prefHeight="200.0" prefWidth="200.0" promptText="End Time" />
-                  <JFXDatePicker fx:id="endDate" defaultColor="#9a529b" promptText="End Date" />
+                  <JFXTimePicker fx:id="endTime" defaultColor="#544f87" prefHeight="200.0" prefWidth="200.0" promptText="End Time" />
+                  <JFXDatePicker fx:id="endDate" defaultColor="#544f87" promptText="End Date" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" />

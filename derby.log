@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jun 09 20:55:44 MSK 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-016b-3d61-bd1d-000004866b48 
+on database directory D:\Project_Java_IntelliJ_Idea\4K-Planner1\calendarDatabase with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/D:/Project_Java_IntelliJ_Idea/4K-Planner1/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=D:\Project_Java_IntelliJ_Idea\4K-Planner1
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

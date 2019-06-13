@@ -2,7 +2,7 @@
 /* Material Design Button Styles from Gui Garage! */
 
 * {
-    -fx-basic-color: #9a529b;  /* Used this same color for calendar headers */
+    -fx-basic-color: #544f87;  /* Used this same color for calendar headers */
     -fx-darker-color: derive(-fx-basic-color, -40% );
     -fx-lighter-color: derive(-fx-basic-color, 80% );
     -fx-lightest-color: derive(-fx-basic-color, 95% );

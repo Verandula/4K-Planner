@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" prefHeight="370.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendar.ui.addevent.AddEventController">
+<AnchorPane fx:id="rootPane" prefHeight="370.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendar.ui.addevent.AddEventController">
    <children>
       <HBox id="header" fx:id="header" prefHeight="35.0" prefWidth="340.0" stylesheets="@../style/materialButtonStyle.css">
          <children>
@@ -55,13 +55,13 @@
             <JFXComboBox fx:id="categorieSelect" focusColor="#4d4d4d" layoutX="10.0" layoutY="102.0" prefHeight="25.0" prefWidth="166.0" promptText="Categorie" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <JFXTimePicker fx:id="startTime" defaultColor="#9a529b" prefHeight="200.0" prefWidth="200.0" promptText="Start Time" />
-                  <JFXDatePicker fx:id="startDate" defaultColor="#9a529b" promptText="Start Date" />
+                  <JFXTimePicker fx:id="startTime" defaultColor="#544f87" prefHeight="200.0" prefWidth="200.0" promptText="Start Time" />
+                  <JFXDatePicker fx:id="startDate" defaultColor="#544f87" promptText="Start Date" />
                </children></HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <JFXTimePicker fx:id="endTime" defaultColor="#9a529b" prefHeight="200.0" prefWidth="200.0" promptText="End Time" />
-                  <JFXDatePicker fx:id="endDate" defaultColor="#9a529b" promptText="End Date" />
+                  <JFXTimePicker fx:id="endTime" defaultColor="#544f87" prefHeight="200.0" prefWidth="200.0" promptText="End Time" />
+                  <JFXDatePicker fx:id="endDate" defaultColor="#544f87" promptText="End Date" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" />

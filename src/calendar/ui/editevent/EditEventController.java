@@ -18,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.util.StringConverter;
 
 import java.net.URL;
 import java.sql.ResultSet;
@@ -73,6 +74,59 @@ public class EditEventController implements Initializable {
 
     //Function that fills the date picker based on the clicked event's date
     void autofillDatePicker() {
+        startDate.setConverter(new StringConverter<LocalDate>() {
+            String pattern = "dd-MM-YYYY";
+            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
+
+            {
+                startDate.setPromptText(pattern.toLowerCase());
+            }
+
+            @Override
+            public String toString(LocalDate date) {
+                if (date != null) {
+                    return dateFormatter.format(date);
+                } else {
+                    return "";
+                }
+            }
+
+            @Override
+            public LocalDate fromString(String string) {
+                if (string != null && !string.isEmpty()) {
+                    return LocalDate.parse(string, dateFormatter);
+                } else {
+                    return null;
+                }
+            }
+        });
+
+        endDate.setConverter(new StringConverter<LocalDate>() {
+            String pattern = "dd-MM-YYYY";
+            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
+
+            {
+                endDate.setPromptText(pattern.toLowerCase());
+            }
+
+            @Override
+            public String toString(LocalDate date) {
+                if (date != null) {
+                    return dateFormatter.format(date);
+                } else {
+                    return "";
+                }
+            }
+
+            @Override
+            public LocalDate fromString(String string) {
+                if (string != null && !string.isEmpty()) {
+                    return LocalDate.parse(string, dateFormatter);
+                } else {
+                    return null;
+                }
+            }
+        });
 
         String calName = MyCalendar.getInstance().calendar_name;
         int categorieID = MyCalendar.getInstance().event_categorie;
@@ -232,9 +286,9 @@ public class EditEventController implements Initializable {
     //Function that updates the information of a selected event from the calendar
     public void updateEvent() {
 
-        // Define date format
         // Define Date format '2011-12-03'
-        DateTimeFormatter myFormat = DateTimeFormatter.ISO_LOCAL_DATE;
+        String pattern = "YYYY-MM-dd";
+        DateTimeFormatter myFormat = DateTimeFormatter.ofPattern(pattern);
         // Define Time format '10:15:30'
         DateTimeFormatter myTimeFormat = DateTimeFormatter.ISO_LOCAL_TIME;
 

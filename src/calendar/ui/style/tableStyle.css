@@ -1,7 +1,7 @@
 /* Material Design Button Styles from Gui Garage */
 
 * {
-    -fx-basic-color: #9a529b;
+    -fx-basic-color: #544f87;
     -fx-darker-color: derive(-fx-basic-color, -40% );
     -fx-lighter-color: derive(-fx-basic-color, 80% );
     -fx-lightest-color: derive(-fx-basic-color, 95% );
@@ -91,3 +91,4 @@
 .media-table-cell {
     -fx-padding: 8px 8px 8px 8px !important;
 }
+
